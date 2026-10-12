@@ -1,0 +1,38 @@
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .o_form_label {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    position: relative;
+    top: -4px;
+    white-space: nowrap;
+}
+
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .o_form_label:after {
+    content: none;
+}
+
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .o_field_widget,
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .o-checkbox {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .form-check-input {
+    float: none;
+    margin: 0;
+    position: static;
+}
+
+.o_form_view .o_inner_group.oe_subtotal_footer .o_po_large_order .form-check-label {
+    display: none;
+}

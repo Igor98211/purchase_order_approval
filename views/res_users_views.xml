@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_users_form_purchase_order_limit" model="ir.ui.view">
+        <field name="name">res.users.form.purchase.order.limit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <group name="other_preferences" position="inside">
+                <field name="company_currency_id" invisible="1"/>
+                <field name="can_edit_purchase_order_limit" invisible="1"/>
+                <field name="purchase_order_limit" readonly="not can_edit_purchase_order_limit"/>
+            </group>
+        </field>
+    </record>
+</odoo>
